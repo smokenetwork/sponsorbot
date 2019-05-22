@@ -37,9 +37,9 @@ const process_comment = async (name, link) => {
   for (let i = 0; i < sponsors.length; i++) {
     if (sponsors[i].accountname === name) {
       isSponsor = true;
-    };
-  };
-  if (check === false) {
+    }
+  }
+  if (isSponsor === false) {
     console.log("Not sponsor");
     return;
   }
