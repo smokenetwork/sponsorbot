@@ -58,7 +58,7 @@ const process_comment = async (name, link) => {
     voteWeight = 100000 / sponsors.length;
   }
 
-  await smoke.broadcast.voteAsync(VOTER_WIF, VOTER_NAME, name, link, weight);
+  await smoke.broadcast.voteAsync(VOTER_WIF, VOTER_NAME, name, link, voteWeight);
 };
 
 const main = async () => {
