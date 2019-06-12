@@ -67,7 +67,7 @@ const main = async () => {
   sponsors = await res.json();
 
   await sleep(5000);
-  const txs = await smoke.api.streamOperations("head",(error, operation) => {
+  const txs = await smoke.api.streamOperations("head",(error, result) => {
     // async in callback ?!
     let txType = result[0];
     let txData = result[1];
